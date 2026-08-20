@@ -1,171 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Navora Traders - Wholesale Paper Distribution & Dealership | Coming Soon">
-  <title>Navora Traders | Wholesale Paper Distribution</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* Text-only brand styling */
-    .brand-text {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      color: #ffffff;
-      text-decoration: none;
-    }
-
-    .brand-text span {
-      background: linear-gradient(90deg, #a18cff, #5de4ff);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      font-weight: 600;
-    }
-
-    /* Colorful accents */
-    .badge {
-      background: linear-gradient(135deg, rgba(121, 92, 255, 0.15), rgba(37, 217, 255, 0.15));
-      border: 1px solid rgba(121, 92, 255, 0.4);
-      color: #b5c7ff;
-    }
-
-    .time strong {
-      background: linear-gradient(180deg, #ffffff 30%, #a18cff 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .time {
-      border: 1px solid rgba(121, 92, 255, 0.25);
-      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-
-    .time:hover {
-      transform: translateY(-2px);
-      border-color: rgba(37, 217, 255, 0.5);
-    }
-
-    .feature:hover {
-      border-color: rgba(121, 92, 255, 0.4);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navora Traders (Pvt) Ltd | Premium Paper & Packaging Solutions</title>
+    <meta name="description" content="Navora Traders - Leading supplier of premium commercial paper, packaging boards, self-adhesives, and converting services in Sri Lanka.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="background">
-    <div class="orb orb-one"></div>
-    <div class="orb orb-two"></div>
-  </div>
+    <!-- Animated Ambient Lighting Elements -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="grid-overlay"></div>
 
-  <main class="container">
+    <div class="wrapper">
+        <!-- Minimalist Header -->
+        <header class="header animate-fade-in">
+            <div class="brand-container">
+                <span class="brand-name">NAVORA</span>
+                <span class="brand-tag">TRADERS (PVT) LTD</span>
+            </div>
+            <div class="status-pill">
+                <span class="status-dot"></span>
+                <span>Official Launch: Sep 18, 2026</span>
+            </div>
+        </header>
 
-    <nav>
-      <a href="#" class="brand-text">
-        NAVORA <span>TRADERS</span>
-      </a>
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="badge animate-slide-down">
+                <i data-lucide="sparkles"></i>
+                <span>Setting New Standards in Paper & Packaging</span>
+            </div>
 
-      <span class="badge">WHOLESALE & DEALERSHIP</span>
-    </nav>
+            <h1 class="hero-title animate-slide-down">
+                The Next Generation of <br>
+                <span class="gradient-text shimmer">Paper & Packaging Solutions</span>
+            </h1>
 
-    <section class="hero">
+            <p class="hero-subtitle animate-slide-down">
+                We are building Sri Lanka's most dependable supply chain network for premium commercial paper, 
+                high-grade packaging boards, self-adhesive films, and precision sheeting.
+            </p>
 
-      <div class="eyebrow">PREMIUM PAPER DISTRIBUTION NETWORK</div>
+            <!-- Animated Countdown Timer -->
+            <div class="countdown-container animate-scale-up">
+                <div class="countdown-card">
+                    <span class="time-val" id="days">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="countdown-card">
+                    <span class="time-val" id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="countdown-card">
+                    <span class="time-val" id="minutes">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="countdown-card">
+                    <span class="time-val" id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
 
-      <h1>
-        Elevating bulk <span>paper</span><br>
-        supply & distribution.
-      </h1>
+            <!-- Lead Capture Section -->
+            <div class="action-section animate-scale-up">
+                <form class="notify-form" id="notifyForm">
+                    <div class="input-group">
+                        <i data-lucide="mail" class="input-icon"></i>
+                        <input type="email" id="emailInput" placeholder="Enter your business email" required>
+                        <button type="submit" class="btn-primary">
+                            <span>Get Early Access</span>
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+                <p class="form-feedback" id="formFeedback"></p>
+            </div>
 
-      <p class="description">
-        Navora Traders is launching a streamlined digital portal for commercial printers, publishers, packaging converters, and regional retail dealers.
-      </p>
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <div class="feature-card animate-card">
+                    <div class="feature-icon">
+                        <i data-lucide="package"></i>
+                    </div>
+                    <h3>Packaging & Box Boards</h3>
+                    <p>Kraft liner boards, test liners, grey boards, duplex & folding box boards (FBB) engineered for rigid packaging.</p>
+                </div>
 
-      <div class="countdown">
+                <div class="feature-card animate-card">
+                    <div class="feature-icon">
+                        <i data-lucide="layers"></i>
+                    </div>
+                    <h3>Commercial & Fine Paper</h3>
+                    <p>C2S art paper & board, woodfree printing paper, copier sheets, and high-bulk book papers.</p>
+                </div>
 
-        <div class="time">
-          <strong id="days">30</strong>
-          <small>DAYS</small>
-        </div>
+                <div class="feature-card animate-card">
+                    <div class="feature-icon">
+                        <i data-lucide="scissors"></i>
+                    </div>
+                    <h3>Sheeting & Rewinding</h3>
+                    <p>Custom reel-to-sheet conversion, slitting, rewinding, and humidity-controlled storage management.</p>
+                </div>
 
-        <div class="separator">:</div>
+                <div class="feature-card animate-card">
+                    <div class="feature-icon">
+                        <i data-lucide="tag"></i>
+                    </div>
+                    <h3>Self-Adhesive & Specialty</h3>
+                    <p>Gloss & matt sticker papers, transparent barrier wraps, food-grade papers, and plotter rolls.</p>
+                </div>
+            </div>
 
-        <div class="time">
-          <strong id="hours">00</strong>
-          <small>HOURS</small>
-        </div>
+            <!-- Direct Contact Card -->
+            <div class="inquiry-banner animate-fade-in">
+                <div class="inquiry-content">
+                    <h4>Require urgent stock or bulk commercial supply?</h4>
+                    <p>Our sales and procurement desk is actively assisting enterprise clients.</p>
+                </div>
+                <div class="inquiry-buttons">
+                    <a href="https://wa.me/94779178054?text=Hello%20Navora%20Traders,%20I%20would%20like%20to%20inquire%20about%20paper%20supplies" target="_blank" class="btn-whatsapp">
+                        <i data-lucide="message-circle"></i>
+                        <span>WhatsApp Inquiry</span>
+                    </a>
+                    <a href="mailto:navinduhemsara@gmail.com" class="btn-secondary">
+                        <i data-lucide="send"></i>
+                        <span>Email Desk</span>
+                    </a>
+                </div>
+            </div>
+        </main>
 
-        <div class="separator">:</div>
+        <!-- Footer With Your Exact Business Details -->
+        <footer class="footer animate-fade-in">
+            <div class="footer-left">
+                <p>&copy; 2026 Navora Traders (Pvt) Ltd. All rights reserved.</p>
+                <p class="footer-sub">No 108/17/A, Maharagama Rd, Mavittara, Piliyandala, Sri Lanka</p>
+            </div>
+            <div class="footer-links">
+                <a href="tel:+94779178054" class="footer-link">
+                    <i data-lucide="phone" class="inline-icon"></i> +94 77 917 8054
+                </a>
+                <span class="footer-link">
+                    <i data-lucide="map-pin" class="inline-icon"></i> Piliyandala, Sri Lanka
+                </span>
+                <a href="mailto:navinduhemsara@gmail.com" class="footer-link">
+                    <i data-lucide="mail" class="inline-icon"></i> navinduhemsara@gmail.com
+                </a>
+            </div>
+        </footer>
+    </div>
 
-        <div class="time">
-          <strong id="minutes">00</strong>
-          <small>MINUTES</small>
-        </div>
-
-        <div class="separator">:</div>
-
-        <div class="time">
-          <strong id="seconds">00</strong>
-          <small>SECONDS</small>
-        </div>
-
-      </div>
-
-      <p class="launch-date">
-        <span></span>
-        Official Portal Launch: <b>18 September 2026</b>
-      </p>
-
-      <div class="buttons">
-        <a href="mailto:info@navoratraders.com?subject=Wholesale%20Dealer%20Inquiry" class="btn primary">
-          Inquire for Dealership
-        </a>
-
-        <a href="#services" class="btn secondary">
-          Explore Products
-        </a>
-      </div>
-
-    </section>
-
-    <section class="features" id="services">
-
-      <div class="feature">
-        <div class="number">01</div>
-        <h2>Commercial & Printing Paper</h2>
-        <p>
-          High-opacity woodfree bond papers, art paper, Bristol board, and offset printing stocks in standard and custom sheet/reel sizes.
-        </p>
-      </div>
-
-      <div class="feature">
-        <div class="number">02</div>
-        <h2>Packaging & Industrial Boards</h2>
-        <p>
-          Duplex boards, kraft liner, folding boxboards, and corrugated medium paper tailored for packaging converters and manufacturers.
-        </p>
-      </div>
-
-      <div class="feature">
-        <div class="number">03</div>
-        <h2>Direct Mill Dealership</h2>
-        <p>
-          Competitive bulk pricing, assured GSM consistency, flexible credit terms, and dependable scheduled logistics for registered dealers.
-        </p>
-      </div>
-
-    </section>
-
-    <footer>
-      <p>© <span id="year"></span> Navora Traders. Premium Paper Importers & Distributors.</p>
-      <p>B2B Portal: Launching September 2026</p>
-    </footer>
-
-  </main>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
