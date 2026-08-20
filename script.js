@@ -8,22 +8,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const minutesEl = document.getElementById("minutes");
   const secondsEl = document.getElementById("seconds");
   const yearEl = document.getElementById("year");
+  const countdownContainer = document.getElementById("countdown-container");
 
-  // Populate dynamic footer year
+  // Dynamic footer year
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
 
+  // Update text only when the value changes to prevent unnecessary DOM reflows
+  function setTimeValue(element, value) {
+    if (!element) return;
+    const formatted = String(value).padStart(2, "0");
+    if (element.textContent !== formatted) {
+      element.textContent = formatted;
+    }
+  }
+
+  let timerInterval = null;
+
   function updateCountdown() {
-    const now = Date.now();
-    const distance = targetDate - now;
+    const distance = targetDate - Date.now();
 
     if (distance <= 0) {
-      if (daysEl) daysEl.textContent = "00";
-      if (hoursEl) hoursEl.textContent = "00";
-      if (minutesEl) minutesEl.textContent = "00";
-      if (secondsEl) secondsEl.textContent = "00";
       clearInterval(timerInterval);
+      setTimeValue(daysEl, 0);
+      setTimeValue(hoursEl, 0);
+      setTimeValue(minutesEl, 0);
+      setTimeValue(secondsEl, 0);
+
+      if (countdownContainer) {
+        countdownContainer.innerHTML = '<p class="launch-live-text">Navora Traders is now Live!</p>';
+      }
       return;
     }
 
@@ -32,13 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    if (daysEl) daysEl.textContent = String(days).padStart(2, "0");
-    if (hoursEl) hoursEl.textContent = String(hours).padStart(2, "0");
-    if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, "0");
-    if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, "0");
+    setTimeValue(daysEl, days);
+    setTimeValue(hoursEl, hours);
+    setTimeValue(minutesEl, minutes);
+    setTimeValue(secondsEl, seconds);
   }
 
-  // Run immediately on page load, then start 1-second interval
+  // Initial call and interval setup
   updateCountdown();
-  const timerInterval = setInterval(updateCountdown, 1000);
+  timerInterval = setInterval(updateCountdown, 1000);
 });
